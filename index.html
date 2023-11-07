@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Slab:wght@700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/my.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <title>Test form</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M27.142 39.9999C31.5298 39.9999 35.12 36.4099 35.12 32.022V13.3557C35.12 7.58696 32.1878 5.35286 27.142 5.3778C24.9912 5.38842 18.4413 12.1975 12.0917 18.6452C7.42399 23.385 2.7031 27.6554 0.73692 30.2796C-0.985056 32.5779 -0.124518 40 8.05077 40H27.142V39.9999Z"
+                  fill="#5CBEFE"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.3427 8.23084e-05C11.9548 8.23084e-05 8.36475 3.59013 8.36475 7.97799V26.6443C8.36475 32.4131 11.2969 34.6472 16.3427 34.6222C18.4935 34.6116 25.0433 27.8026 31.3929 21.3548C36.0606 16.615 40.7816 12.3446 42.7477 9.72038C44.4696 7.42208 43.6092 0 35.4339 0H16.3427V8.23084e-05Z"
+                  fill="#EF5579"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M35.12 17.6515V13.3557C35.12 7.58696 32.1879 5.35286 27.142 5.3778C24.9912 5.38842 18.4414 12.1975 12.0918 18.6452C10.835 19.9214 9.57443 21.1634 8.36475 22.3486V26.6444C8.36475 32.4132 11.2969 34.6473 16.3427 34.6223C18.4935 34.6117 25.0433 27.8026 31.3929 21.3549C32.6497 20.0787 33.9103 18.8367 35.1199 17.6515H35.12Z"
+                  fill="#545DB6"/>
+        </svg>
+        <p>Сократика</p>
+    </div>
+</header>
+<main>
+    <div class="bg-image">
+        <picture>
+            <source type="image/webp" srcset="images/Illustration.webp, images/Illustration.jpg">
+            <img src="images/Illustration.jpg" srcset="images/Illustration.webp" alt="Illustration">
+        </picture>
+    </div>
+    <div class="info-request">
+        <h1>01 Заполни форму</h1>
+        <form action="#" method="post">
+            <div class="textarea-them-select">
+                <label class="textarea-them">
+                    <legend>Тема урока</legend>
+                    <textarea name="them" placeholder="Напиши что-то конкретное" rows="1"></textarea>
+                    <button class="btn-them" type="reset">
+                        <img src="images/plus.svg" alt="+">
+                    </button>
+                </label>
+                <fieldset class="class">
+                    <legend class="class-legend">
+                        Класс
+                    </legend>
+                    <label></label>
+                    <div class="input-block">
+                        <input class="class-input"  autocomplete="off" role="combobox"  id="input" name="browsers" placeholder="4">
+                        <img src="images/arrow-down.svg" alt="arrow">
+                    </div>
+                    <datalist class="class-datalist" id="classes" role="listbox">
+                       <option class="class-option" value="1">1</option>
+                        <option class="class-option" value="2">2</option>
+                        <option class="class-option" value="3">3</option>
+                        <option class="class-option" value="4">4</option>
+                        <option class="class-option" value="5">5</option>
+                    </datalist>
+                </fieldset>
+
+            </div>
+            <div class="version">
+                <label><input type="radio" name="version" value="option1">Генетика</label>
+                <label><input type="radio" name="version" value="option2">Анатомия человека</label>
+                <label><input type="radio" name="version" value="option3">Вулканы</label>
+                <label><input type="radio" name="version" value="option4">Зимние виды спорта</label>
+                <label><input type="radio" name="version" value="option5">Радуга</label>
+                <label><input type="radio" name="version" value="option6">Индийская культура</label>
+                <label><input type="radio" name="version" value="option7">Пеший туризм</label>
+                <label><input type="radio" name="version" value="option8">Философия</label>
+                <label><input type="radio" name="version" value="option9">Вселенная</label>
+                <label><input type="radio" name="version" value="option10">Здоровые привычки</label>
+                <label><input type="radio" name="version" value="option11">Бабочки</label>
+                <label><input type="radio" name="version" value="option12">Белые медведи</label>
+                <label><input type="radio" name="version" value="option13">Экономика</label>
+                <label><input type="radio" name="version" value="option13">Финансовая грамотность</label>
+                <label><input type="radio" name="version" value="option13">Фотосинтез</label>
+
+                <button type="button" class="radio-btn"> + Показать больше вариантов</button>
+            </div>
+            <div class="textarea-target-select">
+                <label class="textarea-target">
+                    <legend>Цель урока</legend>
+                    <textarea id="inputText" name="target" placeholder="Напиши свою учебную цель" rows="3"></textarea>
+                </label>
+                <div class="textarea-count">
+                    <div class="textarea-count-text">
+                        <p class="text-count-registration">Enter your name</p>
+                    </div>
+
+                    <div class="text-count-num">
+                        <p class="text-count">0</p>
+                        <p class="text-count-limit">/200</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <a class="btn-prev" href="#">Назад</a>
+        <a class="btn-next" aria-disabled="true" href="#">Следующий шаг</a>
+    </div>
+</main>
+
+<script src="scripts/datalist.js"></script>
+<script src="scripts/textareaTargetSelect.js"></script>
+<script src="scripts/addVersion.js"></script>
+</body>
+</html>

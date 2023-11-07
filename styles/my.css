@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Slab:wght@700;800&display=swap');
+
+body {
+    max-width: 1920px;
+    background-color: #FDFEFF;
+    padding: 62px 8%;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 152px;
+}
+
+.logo p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+h1 {
+    color: #343434;
+    font-family: Roboto Slab, serif;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+textarea {
+    overflow: hidden;
+    resize: none;
+}
+
+::placeholder {
+    color: #9A9A9A;
+    text-overflow: ellipsis;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-image {
+    padding: 35px;
+    width: 50%;
+}
+
+.info-request {
+    width: 50%;
+}
+
+textarea:focus, .textarea:active {
+    outline: none;
+}
+
+.textarea-them legend,
+.textarea-target legend,
+.select-them legend {
+    background: #FDFEFF;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 5px;
+    margin-top: -28px;
+    font-family: Inter, sans-serif;
+    white-space: nowrap;
+}
+
+.textarea-them textarea {
+    margin-left: -15%;
+    width: 94%;
+}
+
+.textarea-target textarea {
+    margin-left: -15%;
+    width: 98%;
+}
+
+.textarea-them {
+    width: 88%;
+}
+
+.textarea-target {
+    width: 100%;
+}
+
+.textarea-target,
+.textarea-them,
+.select-them {
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.text-count-num {
+    display: flex;
+    justify-content: end;
+    margin-right: 17px;
+}
+
+.textarea-count {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-count-limit,
+.text-count {
+    color: #343434;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+
+.textarea-them,
+.textarea-them-select,
+.textarea-target {
+    display: flex;
+    justify-content: space-between;
+}
+
+/****************/
+
+.class {
+    border: 1px solid #EAEAEA;
+    width: 20%;
+    border-radius: 10px;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 15px;
+    padding: 18px;
+    margin-top: -8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.class-legend {
+    color: #343434;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.class-input {
+    padding: 5px;
+    height: 35px;
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.input-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-block img {
+    width: 14%;
+}
+
+.class-datalist {
+    position: absolute;
+    border: 1px solid #EAEAEA;
+    font-family: sans-serif;
+    padding: 5px;
+    max-height: 10rem;
+    overflow-y: auto;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+    width: 7.6%;
+    margin-top: 2%;
+}
+
+.class-option {
+    background-color: white;
+    padding: 4px;
+    color: #343434;
+    margin-bottom: 1px;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.class-option:hover, .active {
+    color: #343434;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+}
+
+.class-option:hover::after {
+    content: '\2714';
+    color: #343434;
+    background-size: cover;
+    margin-left: 80%;
+}
+
+/**********/
+.version {
+    margin: 50px 0;
+}
+
+[type="checkbox"], [type="radio"] {
+    visibility: hidden;
+}
+
+.radio-btn {
+    color: #3CA9F0;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 20px 0 0;
+}
+
+.version label {
+    display: none;
+    margin: 8px;
+    padding: 10px 16px;
+    align-items: flex-start;
+    gap: 6px;
+    border-radius: 100px;
+    background: #EEEFF0;
+}
+
+/***************/
+.btn-prev {
+    color: #3CA9F0;
+    border: 1px solid #3CA9F0;
+}
+
+[aria-disabled="true"] {
+    color: #9A9A9A;
+    background: #EEEFF0;
+    cursor: none;
+}
+
+[aria-disabled="false"] {
+    color: #FFF;
+    background: #3CA9F0;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+[aria-disabled="true"],
+[aria-disabled="false"],
+.btn-prev {
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 18px 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/**********/
+.text-count-registration {
+    display: none;
+}
+
+.text-registration-red {
+    display: block;
+    color: #FF395D;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+@media screen and (max-width: 1440px) {
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .bg-image {
+        width: 90%;
+    }
+
+    .info-request {
+        width: 90%;
+    }
+
+    .input-block img {
+        width: 25%;
+    }
+
+    .class-datalist {
+        width: 14%;
+        margin-top: 4%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        padding: 26px 4%;
+    }
+
+    h1 {
+        margin: 1em 0;
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.6em !important;
+    }
+
+    .textarea-them textarea {
+        margin-left: -50%;
+    }
+
+    .textarea-target textarea {
+        margin-left: -50%;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .textarea-them,
+    .textarea-them-select,
+    .textarea-target {
+        height: 3em;
+    }
+
+    .class-option {
+        font-size: 14px;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        line-height: 0.15 !important;
+    }
+
+    .class {
+        margin-top: -8px;
+        padding: 6px 18px;
+    }
+
+    .btn-prev {
+        margin-bottom: 20px;
+    }
+
+    .version {
+        margin: 25px 0;
+    }
+
+    .version label {
+        font-size: 15px;
+    }
+
+    .class-datalist {
+        width: 20%;
+        margin-top: 6%;
+    }
+
+    .radio-btn {
+        font-size: 16px;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    textarea {
+        line-height: 1.15 !important;
+    }
+
+    .textarea-them textarea {
+        margin-left: -50%;
+    }
+
+    ::placeholder {
+        white-space: normal;
+        font-size: 13px;
+    }
+
+    .textarea-target,
+    .textarea-them,
+    .select-them {
+        border: 1px solid #EAEAEA;
+        border-radius: 10px;
+        padding: 8px;
+    }
+
+    .textarea-them legend,
+    .textarea-target legend,
+    .select-them legend {
+        font-size: 14px;
+        margin-top: -17px;
+    }
+
+    .class-legend {
+        font-size: 14px;
+    }
+
+    .class-datalist {
+        width: 21%;
+    }
+
+    .class-input {
+        font-size: 14px;
+    }
+
+    .version label {
+        padding: 10px 17px 10px 0;
+    }
+
+}
+
+
+
