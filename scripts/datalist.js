@@ -4,6 +4,7 @@ let fieldsetClass = document.querySelector(".class")
 let classLegend = document.querySelector(".class-legend")
 let classOption = document.querySelectorAll(".class-option")
 let inputBlock = document.querySelector(".input-block img")
+let inpBl = document.querySelector(".input-block")
 
 
 fieldsetClass.addEventListener("click", function (){
@@ -20,11 +21,11 @@ classOption.forEach(el =>{
     })
 })
 
-input.onfocus = function () {
+inpBl.addEventListener("click",   function (){
     classes.style.display = 'block';
     input.style.borderRadius = "10px";
     inputBlock.style.transform ="rotate(180deg)";
-};
+})
 
 for (let option of classes.options) {
     option.onclick = function () {
